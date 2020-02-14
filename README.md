@@ -1,7 +1,7 @@
 # bibrary
 Learn to think and add in binary!
 
-![Image](https://github.com/edwinagnew/bibrary/blob/master/example_image.pngg)
+![Image](example_image.png)
 
 Tests you most on the ones you find hardest and adds new numbers if you're doing well.
 
