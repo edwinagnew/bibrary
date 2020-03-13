@@ -20,10 +20,14 @@ class colour:
 
 ap = argparse.ArgumentParser()
 
+
 ap.add_argument("-u", "--user", required=False,
                 help="(optional) your name or what you want your scores to be saved as")
 
+
+
 args = ap.parse_args()
+
 
 print(colour.BOLD + colour.UNDERLINE + colour.BLUE + colour.GREEN + "welcome to binaradd?" + colour.END)
 
@@ -80,7 +84,13 @@ for line in lines[:-1]:
 
 
 def get_sum(x,y):
-    return int(input('{0:b}'.format(x) + " + " + '{0:b}'.format(y) + " = "), 2)
+    try:
+        val = int(input('{0:b}'.format(x) + " + " + '{0:b}'.format(y) + " = ").replace(" ", ""), 2)
+    except:
+        print(colour.WARNING + "that doesnt seem right" + colour.END)
+        print("Remember to enter -1 to end")
+        val = int(input('{0:b}'.format(x) + " + " + '{0:b}'.format(y) + " = "), 2)
+    return val
 
 local_score = 0
 local_total = 0
