@@ -32,7 +32,7 @@ ap.add_argument("-u", "--user", required=False,
                 help="(optional) your name or what you want your scores to be saved as")
 ap.add_argument("-n", "--number", nargs="?", type=int, default=6) #? means 1 or 2 args
 ap.add_argument("-b", "--base", nargs='?', default=2, type=int,
-                help="(optional) what base: 2=10 or 3=|_0")
+                help="(optional) what base: 2=10 or 3=_+")
 #NB base 3 takes same direction choices but obviously bd means ternary => decimal
 args = ap.parse_args()
 
